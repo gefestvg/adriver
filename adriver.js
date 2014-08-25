@@ -83,7 +83,7 @@ adriver.extend(adriver, {
         try {
             var d = document, oldOnload = window.onload;
             function ready(){if(adriver.isDomReady){return;}f()}
-            if (document.readyState === "complete"){ready();}
+            if (document.readyState === "complete" || document.readyState ==="interactive"){ready();}
             else if(d.addEventListener){d.addEventListener("DOMContentLoaded", ready, false)}
             else if(document.attachEvent){
                 var doScrollCheck = function(){
