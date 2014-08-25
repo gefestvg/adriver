@@ -1,0 +1,12 @@
+{
+  "name": "adriver",
+  "main": "adriver.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/geometria-lab/adriver",
+  "authors": [
+    "Aleksey Grushikhin <grushikhin@gmail.com>"
+  ],
+  "description": "patched adriver.core.2.js",
+  "license": "MIT",
+  "private": true
+}
