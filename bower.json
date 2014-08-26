@@ -8,5 +8,13 @@
   ],
   "description": "patched adriver.core.2.js",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "ignore": [
+    ".bowerrc",
+    ".gitignore",
+    "bower.json",
+    "gruntfile.js",
+    "package.json",
+    "README.md"
+    ]
 }
