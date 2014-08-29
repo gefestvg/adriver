@@ -1,4 +1,4 @@
-// v 1.0.2
+// v 1.0.3
 function adriver(ph, prm, defer){
     var my = this, p = ph;
     if(this instanceof adriver){
