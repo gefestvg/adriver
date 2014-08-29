@@ -1,7 +1,7 @@
 {
   "name": "adriver",
   "main": "adriver.js",
-  "version": "1.0.2",
+  "version": "latest",
   "homepage": "https://github.com/geometria-lab/adriver",
   "authors": [
     "Aleksey Grushikhin <grushikhin@gmail.com>"
