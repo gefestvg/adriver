@@ -33,8 +33,8 @@ adriver.prototype = {
     domReady: function(){},
 
     onLoadComplete: function(f){var my = this; my.loadCompleteQueue.push(function(){f.call(my)}); return my},
-    onDomReady: function(f){this.domReadyQueue.push(f); return this},
-    reset: function(){this.loadCompleteQueue.flush(); this.domReadyQueue.flush(adriver.isDomReady); return this}
+    onDomReady: function(f){var my = this;my.domReadyQueue.push(f); return my},
+    reset: function(){var my = this; my.loadCompleteQueue.flush(); my.domReadyQueue.flush(adriver.isDomReady); return my}
 }
 
 adriver.extend = function(){
@@ -99,7 +99,7 @@ adriver.extend(adriver, {
                 try {
                     toplevel = window.frameElement == null;
                 }catch(e){}
-                if (document.documentElement.doScroll && toplevel){doScrollCheck()}
+                if (document.documentElement.doScroll && toloadCompleteQueueplevel){doScrollCheck()}
                 var DOMContentLoaded = function(){
                     if (document.readyState === "complete"){
                         document.detachEvent("onreadystatechange", DOMContentLoaded);
